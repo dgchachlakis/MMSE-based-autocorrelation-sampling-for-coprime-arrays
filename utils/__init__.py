@@ -12,3 +12,7 @@ from .selection_sampling import selection_sampling
 from .averaging_sampling import averaging_sampling
 from .spatial_smoothing import spatial_smoothing
 from .smoothing_matrix import smoothing_matrix
+from .He_matrix import He_matrix
+from .P_matrix import P_matrix
+from .form_integrals_map import form_integrals_map
+from .generate_uniform_doas import generate_uniform_doas
