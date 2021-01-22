@@ -1,4 +1,4 @@
-## MMSE-based-autocorrelation-sampling-in-coprime-arrays
+## MMSE-based-autocorrelation-sampling-for-coprime-arrays
 
 
 
@@ -63,7 +63,7 @@ err_sel = np.zeros((len(number_of_snapshots_axis), number_of_realizations))
 err_avg = np.zeros((len(number_of_snapshots_axis), number_of_realizations))
 err_mmse = np.zeros((len(number_of_snapshots_axis), number_of_realizations))
 ```
-Compute multiple measurents of the squared-error in estimating the true coarray autocorrelation matrix for different DoA sets across realiazations.
+Compute multiple measurents of the squared-error in estimating the true coarray autocorrelation matrix for different DoA sets across realizations.
 ```python
 for j in range(number_of_realizations):
     # DoA sources
@@ -112,7 +112,7 @@ For the configuration above, the sample-average MSEs are shown below:
 ---
 **Example 2 -- Deterministic DoA sources**
 
-Here, we show a similar example. This time, we consider a fixed and deterministic set of DoAs across all realizaitons of noise.
+Here, we show a similar example. This time, we consider a fixed and deterministic set of DoAs across all realizations of noise.
 
 ```python
 import numpy as np
