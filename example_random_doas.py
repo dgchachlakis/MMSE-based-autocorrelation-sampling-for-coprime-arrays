@@ -41,12 +41,12 @@ for j in range(number_of_realizations):
     # Nominal Physical autocrrelation matrix
     R = autocorrelation_matrix(S, source_powers, noise_power)
     # Nominal coarray autocorrelation matrix
-    Z = spatial_smoothing(F, Esel.T @ R.flatten())
+    Z = spatial_smoothing(F, Esel.T @ R.flatten('F'))
     for i, Q in enumerate(number_of_snapshots_axis):
         Emmse = mmse_sampling(He, P, Esel, Q)
         Y = snapshots(S, source_powers, noise_power, Q)
         Rest = autocorrelation_matrix_est(Y)
-        r = Rest.flatten()
+        r = Rest.flatten('F')
         Zsel = spatial_smoothing(F, Esel.T @ r)
         Zavg = spatial_smoothing(F, Eavg.T @ r)
         Zmmse = spatial_smoothing(F, Emmse.T @ r)
