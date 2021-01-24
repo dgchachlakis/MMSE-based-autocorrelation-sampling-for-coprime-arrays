@@ -2,7 +2,7 @@
 
 
 
-In this repo we implement the Minimum-MSE (MMSE) autocorrelation sampling approach for coprime array processing that was derived in [[1]](https://ieeexplore.ieee.org/document/8461676) under an angular distribution assumption. We compare the MMSE sampling approach with the existing selection and averaging sampling approaches with repsect to coarray autocorrelation matrix estimation performance. 
+In this repo we implement the Minimum-MSE (MMSE) autocorrelation sampling approach for coprime array processing that was derived in [[1]](https://ieeexplore.ieee.org/document/8461676) under an angular distribution assumption. We compare the MMSE sampling approach with the existing selection and averaging sampling approaches with respect to coarray autocorrelation matrix estimation performance. 
 
 ---
 
